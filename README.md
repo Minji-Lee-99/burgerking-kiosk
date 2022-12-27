@@ -6,21 +6,13 @@
 
 1. Home(메뉴 카테고리가 있고, 메뉴를 고를 수 있는 페이지)
 
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8e952d9-ec38-4855-8d40-dcf450455385/Untitled.png)
-
 2. Order(내가 고른 메뉴를 확인할 수 있는 페이지)
-
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/abd23c98-a49c-494b-a8f5-53dd9f8dacba/Untitled.png)
 
 3. Complete(결제가 정상적으로 됐음을 알려주는 페이지)
 
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/556a83fd-3d1d-491b-8892-9902384ce1f4/Untitled.png)
-
 ### 문제점
 
-아래 Home페이지에서 카테고리를 변경할 때, 버거 리스트는 변경이 되지만, 활성화 디자인을 주기 위한 class삽입이 변경되지 않습니다. 이 문제는 해결하는 중입니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8e952d9-ec38-4855-8d40-dcf450455385/Untitled.png)
+Home페이지에서 카테고리를 변경할 때, 버거 리스트는 변경이 되지만, 활성화 디자인을 주기 위한 class삽입이 변경되지 않습니다. 이 문제는 해결하는 중입니다.
 
 ### 느낀 점
 
