@@ -1,38 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 .App {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* Home 페이지 CSS */
+
+.Home header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: 800;
+  font-size: 18px;
+  color: #BBBBBB;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home .category {
+  height: 70px;
+  border-left: 1px solid #ececec;
+  border-bottom:1px solid #ececec;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.Home .category span {
+  width: 100%;
+}
+
+.Home .seleted-category {
+  color: red;
+  border-bottom: red 4px solid;
+}
+
+.Home .menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.Home .cart {
+  background-color: #F5F0EC;
+  height: 160px;
+  padding: 30px;
+}
+
+.Home .cart-item-container {
+  display: flex;
+
+}
+
+.Home .cart .cart-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Home .cart .cart-cnt-word {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.Home .cart .cart-cnt-number {
+  background-color: red;
+  border-radius: 10px;
+  padding: 1px 12px 1px 12px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Home .cart .cart-total-price-word {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home .cart .cart-total-price-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: red;
+}
+
+.Home .cart-item {
+  background-color: white;
+  width: 180px;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.Home .cart-item .cart-item-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home .cart-item .cart-item-top button {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  color: #BBBBBB;
+}
+
+.Home .cart-item .cart-item-top span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Home .cart-item .price {
+  font-size: 18px;
+  font-weight: 800;
+  color: red;
+}
+
+
+/* MenuItem */
+.MenuItem {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+
+.MenuItem div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MenuItem img {
+  width: 60%;
+}
+
+.MenuItem .menu {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.MenuItem .price {
+  color: red;
+  font-weight: 800;
+}
+
+.cancle-btn {
+  width: 50%;
+  box-sizing: border-box;
+  height: 60px;
+  border: none;
+  background-color: #383838;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.order-btn {
+  width: 50%;
+  box-sizing: border-box;
+  height: 60px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* OrderCheck */
+.OrderCheck {
+}
+
+.OrderCheck .header {
+  box-sizing: border-box;
+  height: 85px;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #ececec solid;
+}
+
+.OrderCheck .header span {
+  margin-left: 20px;
+}
+
+.OrderCheck .order-list{
+  background-color: #F4EBE4;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  min-height: 837px;
+}
+
+.OrderCheck .order-item {
+  width: 70%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.OrderCheck .order-item img {
+  width: 30%;
+}
+
+.OrderCheck .order-item-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 20px 0px 0px 20px;
+}
+
+.OrderCheck .order-item-info .name {
+  margin-bottom: 20px;
+}
+
+.OrderCheck .order-item-info .price {
+  color: red;
+}
+
+.OrderCheck .footer {
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.OrderCheck .footer .price-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.OrderCheck .footer .price-area .word {
+  color: #383838;
+}
+
+.OrderCheck .footer .price-area .price {
+  color: red;
+}
+
+.OrderCheck .footer .btn-area button {
+  width: 49%;
+  border: none;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.OrderCheck .footer .btn-area .back-btn {
+  background-color: #383838;
+  margin-right: 2%;
+}
+
+
+.OrderCheck .footer .btn-area .pay-btn {
+  background-color: red;
+}
+
+/* OrderComplete */
+
+.OrderComplete .header {
+  box-sizing: border-box;
+  height: 85px;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #ececec solid;
+}
+
+.OrderComplete .header span {
+  margin-left: 20px;
+}
+
+.OrderComplete .main {
+  min-height: 1015px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4EBE4;
+}
+
+.OrderComplete .main .para1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.OrderComplete .main .para2 {
+  font-weight: 800;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.OrderComplete .main .para2 .small {
+  font-size: 24px;
+}
+
+.OrderComplete .main .para2 .large {
+  font-size: 132px;
+}
+
+.OrderComplete .main .para3 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.OrderComplete .main img {
+  width: 25%;
 }
